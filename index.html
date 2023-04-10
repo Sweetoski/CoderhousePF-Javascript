@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="./css/estilos_index.css">
+</head>
+<body>
+    <div class="form">
+        <fieldset>
+            <h1>SIMULADOR DE PRESTAMO</h1>
+            <form>
+                <div>
+                    <label for="capital">Cantidad del Prestamo
+                        <input type="text" placeholder="Ingrese el capital prestado" id="capital">
+                    </label>
+                </div>
+                <div>
+                    <label for="couta">A cuantos meses
+                        <input type="text" placeholder="Ingrese las cuotas del prestamo" id="couta">
+                    </label>
+                </div>
+                <div>
+                    <label for="interes">Interes
+                        <input type="text" placeholder="Ingrese el interés a generar" id="interes">
+                    </label>
+                </div>
+            </form>
+        <button onclick="gen_table();">CALCULAR</button>
+        </fieldset>
+        <hr>
+        <table class="tab">
+            <thead>
+                <tr>
+                    <td>Meses</td>
+                    <td>Prestamo</td>
+                    <td>Interes</td>
+                    <td>Total a Pagar</td>
+                </tr>
+            </thead>
+            <tbody id="tab">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+<script>
+    function gen_table(){
+    document.getElementById("tab").innerHTML="";
+    let n=Number(document.getElementById("capital").value);
+    let n2=Number(document.getElementById("couta").value);
+    let n3=Number(document.getElementById("interes").value);
+    if(n>0){   
+        for(i=1;i<=n2;i++){
+            ca=n/n2;
+            d1=ca.toFixed(2);
+            i2=((n*n3)/100)/n2;
+            d2=i2.toFixed(2);
+            r=ca+i2;
+            d3=r.toFixed(2);
+            document.getElementById("tab").innerHTML=document.getElementById("tab").innerHTML+
+                    `<tr>
+                        <td> ${i}</td>
+                        <td> ${d1}</td>
+                        <td> ${d2}</td>
+                        <td> ${d3}</td>
+                    </tr>`;
+        }
+        n1=n.toFixed(2);
+        t_i=i2*n2;
+        d4=t_i.toFixed(2);
+        t_p=r*n2;
+        d5=t_p.toFixed(2);
+        document.getElementById("t1").innerHTML=n1;
+        document.getElementById("t2").innerHTML=d4;
+        document.getElementById("t3").innerHTML=d5;        
+    }else{
+        alert("Falta ingresar un Número");
+    }
+}
+</script>
+</html>

@@ -25,7 +25,7 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav mx-auto" style="width: 60%;">
-                      <a class="nav-link mx-auto" href="./pages/pruebas.html">Pruebas</a>
+                      <a class="nav-link mx-auto" href="./pages/accesorios.html">Accesorios y Repuestos</a>
                       <a class="nav-link mx-auto" href="./pages/contacto.html">Contacto</a>
                     </div>
                   </div>
@@ -224,44 +224,8 @@
           </div>
         </div>
       </div>
-    
-        <!-- Información sobre accesorios -->
-        <section class="info_accesorios">
-            <article>
-                <h4>Accesorios y Repuestos</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, asperiores placeat. Ea at unde corporis fuga, itaque beatae dolorum aperiam libero odit voluptatum, ex quam, officiis doloremque sed aspernatur consequatur.</p>
-            </article>
-        </section>
-    
-        <!--  Imagenes de accesorios -->
-        <div class="container text-center logos_nissan">
-          <div class="row logos_accesorios row">
-            <div class="col">
-              <div><img src="./img/accesorio 01.png" alt=""></li></div>
-            </div>
-            <div class="col">
-              <div><img src="./img/accesorio 02.png" alt=""></li></div>
-            </div>
-            <div class="col">
-              <div><img src="./img/accesorio 03.png" alt=""></li></div>
-            </div>
-            <div class="col">
-              <div><img src="./img/accesorio 04.png" alt=""></li></div>
-            </div>
-            <div class="col">
-              <div><img src="./img/accesorio 05.png" alt=""></li></div>
-            </div>
-            <div class="col">
-              <div><img src="./img/accesorio 06.png" alt=""></li></div>
-            </div>
-            <div class="col">
-              <div><img src="./img/accesorio 07.png" alt=""></li></div>
-            </div>
-          </div>
-        </div>
 
     <!-- Simulador de Precios -->
-    
     <div class="form">
       <fieldset>
           <p class="titulo_tabla">COTIZACION A MESES</p>
@@ -282,7 +246,7 @@
                   </label>
               </div>
           </form>
-      <button onclick="gen_table();">CALCULAR</button>
+      <button class="btn btn-sucess" onclick="gen_table();">CALCULAR</button>
       </fieldset>
       <hr>
       <table class="tab">
@@ -327,6 +291,17 @@
       </table>
     </div>
 
+    <!-- Lista de Actividades -->
+    <div class="lista_container">
+      <h3>Actividades de Hoy</h3>
+        <p id="text">¿Qué vamos a hacer hoy?</p>
+        <input type="text" id="nueva-actividad" placeholder="Agregar actividad">
+        <button id="btn-agregar">Ingresar</button>
+        <ol>
+            <li>Iniciar Lista</li>
+        </ol>
+    </div>
+
     <!-- Footer del Index -->  
     <footer>
         <div class="footer_container">
@@ -334,7 +309,7 @@
                 <b>MAPA DE SITIO</b>
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/pruebas.html">Pruebas</a></li>
+                    <li><a href="./pages/accesorios.html">Accesorios y Repuestos</a></li>
                     <li><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>

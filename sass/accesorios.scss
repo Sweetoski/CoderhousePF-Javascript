@@ -1,0 +1,142 @@
+/* Archivo Pruebas */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+$space: 20px;
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+    nav {
+        a {
+            &:hover {
+                font-size: $space;
+            }
+        }
+    }
+    .section_container_pruebas {
+        flex-direction: column;
+        align-items: center;
+        div {
+            h3 {
+                color: rgb(50, 50, 50);
+                text-align: center;
+                border: 30px solid #929AAB;
+                width: 300px;
+                background-color: #929AAB;
+                border-radius: 30px;
+            }
+        }
+        .boton_ver_mas {
+            color: black;
+            background-color: white;
+            border-color: white;
+        }
+        .ver_mas_texto {
+            background-color: rgb(50, 50, 50);
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+}
+
+header {
+    background-color: black;
+    h1 {
+        font-size: 0px;
+    }
+}
+
+/* Menu de Navegación */
+.navbar {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    a {
+        color: white;
+        padding: 30px;
+        cursor: pointer;
+        justify-content: center;
+        img {
+            width: 180px;
+            height: auto;
+        }
+        &:hover {
+            color: firebrick;
+            text-decoration: overline;
+        }
+    }
+    .span_burger {
+        color: white;
+        cursor: pointer;
+    }
+    .border_burger {
+        border-color: white;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(50, 50, 50);
+        }
+    }
+}
+
+/* Imagenes */
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    div {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        color: white;
+        padding: 1em;
+    }
+    li {
+        margin-right: 30px;
+    }
+}
+
+.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    ul {
+        list-style: none;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: #929AAB;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.div_social_logo {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.social_logo {
+    list-style: none;
+    display: flex;
+    img {
+        width: 30px;
+        height: 30px;
+        &:hover {
+            transform: scale(1.35);
+        }
+    }
+}

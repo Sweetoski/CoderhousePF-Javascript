@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* Archivo Pruebas */
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  nav a:hover {
+    font-size: 20px;
+  }
+  .section_container_pruebas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_container_pruebas div h3 {
+    color: rgb(50, 50, 50);
+    text-align: center;
+    border: 30px solid #929AAB;
+    width: 300px;
+    background-color: #929AAB;
+    border-radius: 30px;
+  }
+  .section_container_pruebas .boton_ver_mas {
+    color: black;
+    background-color: white;
+    border-color: white;
+  }
+  .section_container_pruebas .ver_mas_texto {
+    background-color: rgb(50, 50, 50);
+  }
+}
+header {
+  background-color: black;
+}
+header h1 {
+  font-size: 0px;
+}
+
+/* Menu de Navegación */
+.navbar {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+.navbar a {
+  color: white;
+  padding: 30px;
+  cursor: pointer;
+  justify-content: center;
+}
+.navbar a img {
+  width: 180px;
+  height: auto;
+}
+.navbar a:hover {
+  color: firebrick;
+  text-decoration: overline;
+}
+.navbar .span_burger {
+  color: white;
+  cursor: pointer;
+}
+.navbar .border_burger {
+  border-color: white;
+  cursor: pointer;
+}
+.navbar .border_burger:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+/* Imagenes */
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Informacion final y logos */
+.info_accesorios {
+  padding: 5% 25% 1% 25%;
+}
+
+.logos_accesorios {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+.logos_accesorios img {
+  width: 120px;
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+}
+footer div {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: white;
+  padding: 1em;
+}
+footer li {
+  margin-right: 30px;
+}
+
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer_container ul {
+  list-style: none;
+}
+.footer_container ul a {
+  color: white;
+  text-decoration: none;
+}
+.footer_container ul a:hover {
+  color: #929AAB;
+  text-decoration: underline;
+}
+
+.div_social_logo {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.social_logo {
+  list-style: none;
+  display: flex;
+}
+.social_logo img {
+  width: 30px;
+  height: 30px;
+}
+.social_logo img:hover {
+  transform: scale(1.35);
+}
+
+/*# sourceMappingURL=estilos_accesorios.css.map */

@@ -1,5 +1,4 @@
 /* Simulador de Precios */
-
 function gen_table(){
   document.getElementById("tab").innerHTML="";
   let n=Number(document.getElementById("capital").value);
@@ -34,9 +33,7 @@ function gen_table(){
   }
 }
 
-
 /* Forma para Usuarios */
-
 function capturar(){
     /* console.log("capturado") */
     function Persona(nombre,edad){
@@ -58,3 +55,26 @@ function capturar(){
     /* console.log(baseDatos); */
     document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.edad+'</td></tbody>';
   }
+
+  /* Lista de Actividades */
+  let button = document.querySelector('#btn-agregar');
+  let input = document.querySelector('#nueva-actividad');
+  let ol = document.querySelector('ol');
+
+  /* console.log(ol); */
+
+  button.addEventListener('click', function(){
+      let li = document.createElement('li');
+      li.appendChild(document.createTextNode(input.value));
+      ol.appendChild(li);
+      input.value = '';
+  });
+
+  input.addEventListener('keypress', function(event) {
+    if(input.value.lenght > 0 && event.keyCode == 13) {
+      let li = document.createElement('li');
+      li.appendChild(document.createTextNode(input.value));
+      ol.appendChild(li);
+      input.value = '';
+    }
+  })

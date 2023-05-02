@@ -136,24 +136,7 @@ main h2 {
     }
 }
 
-/* Informacion final y logos */
-.info_accesorios {
-    padding: 5% 25% 1% 25%;
-}
-
-.logos_accesorios {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 5rem;
-    padding-bottom: 8rem;
-    img {
-        width: 120px;
-    }
-}
-
 /* Simulador de precios a meses */
-
 .titulo_tabla {
     text-align: center;
     font-family: 'arial';
@@ -227,13 +210,31 @@ main h2 {
     width: 500px;
 }
 
+/* Forma Usuarios */
 .boton_agregar {
     background-color: #c5db48;
 }
 .div_nombreEdad {
-    background-color: #000000;
-    th {
+    background-color: #ffffff;
+    thead {
+        border: #000000;
+    }
+}
+
+/* Lista de Actividades */
+.lista_container {
+    background-color: #8d8d8d;
+    padding: 5%;
+    input {
+        border-radius: 10px;
+        background-color: #000000;
         color: #ffffff;
+    }
+    button {
+        background-color: #c5db48;
+        border-radius: 10px;
+        border: #c5db48;
+        padding: 10px;
     }
 }
 

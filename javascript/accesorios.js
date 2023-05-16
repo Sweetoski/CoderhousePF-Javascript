@@ -1,88 +1,48 @@
 const productos = [
     {
-        id: "bujias-filtros-01",
-        titulo: "Bujías 01",
-        imagen: "../img/01 Golf 2019.jpg",
+        id: "refacciones-01",
+        titulo: "Bujiías",
+        imagen: "../img/refacciones/bujias 01.png",
         categoria: {
-            nombre: "Bujias",
-            id: "bujias"
-        },
-        precio: 500
-    },
-    {
-        id: "bujias-filtros-02",
-        titulo: "Bujías 02",
-        imagen: "../img/02 Golf 2019.jpg",
-        categoria: {
-            nombre: "Bujias",
-            id: "bujias"
-        },
-        precio: 500
-    },
-    {
-        id: "bujias-filtros-03",
-        titulo: "Bujías 03",
-        imagen: "../img/03 Golf 2019 interior.jpg",
-        categoria: {
-            nombre: "Bujias",
-            id: "bujias"
-        },
-        precio: 500
-    },
-    {
-        id: "bujias-filtros-04",
-        titulo: "Bujías 04",
-        imagen: "../img/01 Golf 2019.jpg",
-        categoria: {
-            nombre: "Bujias",
-            id: "bujias"
-        },
-        precio: 500
-    },
-    {
-        id: "frenos-01",
-        titulo: "Frenos 01",
-        imagen: "../img/frenos/frenos 01.png",
-        categoria: {
-            nombre: "Frenos",
-            id: "frenos"
+            nombre: "Refacciones",
+            id: "refacciones"
         },
         precio: 600
     },
     {
-        id: "frenos-02",
-        titulo: "Frenos 02",
-        imagen: "../img/frenos/frenos 01.png",
+        id: "refacciones-02",
+        titulo: "Frenos",
+        imagen: "../img/refacciones/frenos 02.png",
         categoria: {
-            nombre: "Frenos",
-            id: "frenos"
+            nombre: "Refacciones",
+            id: "refacciones"
         },
         precio: 600
     },
     {
-        id: "frenos-03",
-        titulo: "Frenos 03",
-        imagen: "../img/frenos/frenos 01.png",
+        id: "refacciones-03",
+        titulo: "Filtro",
+        imagen: "../img/refacciones/filtro 03.png",
         categoria: {
-            nombre: "Frenos",
-            id: "frenos"
+            nombre: "Refacciones",
+            id: "refacciones"
         },
         precio: 600
     },
     {
-        id: "frenos-04",
-        titulo: "Frenos 04",
-        imagen: "../img/frenos/frenos 01.png",
+        id: "refacciones-04",
+        titulo: "Pastillas",
+        imagen: "../img/refacciones/pastillas 04.png",
         categoria: {
-            nombre: "Frenos",
-            id: "frenos"
+            nombre: "Refacciones",
+            id: "refacciones"
         },
         precio: 600
     },
     {
         id: "interior-01",
-        titulo: "Volante 01",
-        imagen: "../img/interior/volante 01.png",
+        titulo: "Asiento",
+        imagen: "../img/interior/asiento 01.png",
         categoria: {
             nombre: "Interior",
             id: "interior"
@@ -91,8 +51,8 @@ const productos = [
     },
     {
         id: "interior-02",
-        titulo: "Interior 02",
-        imagen: "../img/interior/volante 01.png",
+        titulo: "Volante",
+        imagen: "../img/interior/volante 02.png",
         categoria: {
             nombre: "Interior",
             id: "interior"
@@ -101,8 +61,8 @@ const productos = [
     },
     {
         id: "interior-03",
-        titulo: "Interior 03",
-        imagen: "../img/interior/volante 01.png",
+        titulo: "Tapete",
+        imagen: "../img/interior/tapete 03.png",
         categoria: {
             nombre: "Interior",
             id: "interior"
@@ -111,14 +71,214 @@ const productos = [
     },
     {
         id: "interior-04",
-        titulo: "Interior 04",
-        imagen: "../img/interior/volante 01.png",
+        titulo: "Estereo",
+        imagen: "../img/interior/estereo 04.png",
         categoria: {
             nombre: "Interior",
             id: "interior"
         },
         precio: 250
-    }
+    },
+    {
+        id: "luces-01",
+        titulo: "Faros",
+        imagen: "../img/luces/faros 01.png",
+        categoria: {
+            nombre: "Luces",
+            id: "luces"
+        },
+        precio: 1250
+    },
+    {
+        id: "luces-02",
+        titulo: "Calavera",
+        imagen: "../img/luces/calavera 02.png",
+        categoria: {
+            nombre: "Luces",
+            id: "luces"
+        },
+        precio: 1250
+    },
+    {
+        id: "luces-03",
+        titulo: "Stop",
+        imagen: "../img/luces/stop 03.png",
+        categoria: {
+            nombre: "Luces",
+            id: "luces"
+        },
+        precio: 1250
+    },
+    {
+        id: "luces-04",
+        titulo: "Bombilla",
+        imagen: "../img/luces/bombilla 04.png",
+        categoria: {
+            nombre: "Luces",
+            id: "luces"
+        },
+        precio: 1250
+    },
+    {
+        id: "baterias-01",
+        titulo: "Batería 01",
+        imagen: "../img/baterias/bateria 01.png",
+        categoria: {
+            nombre: "Baterias",
+            id: "baterias"
+        },
+        precio: 700
+    },
+    {
+        id: "baterias-02",
+        titulo: "Batería 02",
+        imagen: "../img/baterias/bateria 02.png",
+        categoria: {
+            nombre: "Baterias",
+            id: "baterias"
+        },
+        precio: 700
+    },
+    {
+        id: "baterias-03",
+        titulo: "Batería 03",
+        imagen: "../img/baterias/bateria 03.png",
+        categoria: {
+            nombre: "Baterias",
+            id: "baterias"
+        },
+        precio: 700
+    },
+    {
+        id: "baterias-04",
+        titulo: "Batería 04",
+        imagen: "../img/baterias/bateria 04.png",
+        categoria: {
+            nombre: "Baterias",
+            id: "baterias"
+        },
+        precio: 700
+    },
+    {
+        id: "rines-01",
+        titulo: "Rin 01",
+        imagen: "../img/rines/rin 01.png",
+        categoria: {
+            nombre: "Rines",
+            id: "rines"
+        },
+        precio: 2000
+    },
+    {
+        id: "rines-02",
+        titulo: "Rin 02",
+        imagen: "../img/rines/rin 02.png",
+        categoria: {
+            nombre: "Rines",
+            id: "rines"
+        },
+        precio: 2000
+    },
+    {
+        id: "rines-03",
+        titulo: "Rin 03",
+        imagen: "../img/rines/rin 03.png",
+        categoria: {
+            nombre: "Rines",
+            id: "rines"
+        },
+        precio: 2000
+    },
+    {
+        id: "rines-04",
+        titulo: "Rin 04",
+        imagen: "../img/rines/rin 04.png",
+        categoria: {
+            nombre: "Rines",
+            id: "rines"
+        },
+        precio: 2000
+    },
+    {
+        id: "aceites-01",
+        titulo: "Anticongelante 01",
+        imagen: "../img/aceites/anticongelante 01.png",
+        categoria: {
+            nombre: "Aceites y Anticongelantes",
+            id: "aceites"
+        },
+        precio: 300
+    },
+    {
+        id: "aceites-02",
+        titulo: "Aceite 01",
+        imagen: "../img/aceites/aceite 02.png",
+        categoria: {
+            nombre: "Aceites y Anticongelantes",
+            id: "aceites"
+        },
+        precio: 300
+    },
+    {
+        id: "aceites-03",
+        titulo: "Anticongelante 02",
+        imagen: "../img/aceites/anticongelante 03.png",
+        categoria: {
+            nombre: "Aceites y Anticongelantes",
+            id: "aceites"
+        },
+        precio: 300
+    },
+    {
+        id: "aceites-04",
+        titulo: "Aceite 02",
+        imagen: "../img/aceites/aceite 04.png",
+        categoria: {
+            nombre: "Aceites y Anticongelantes",
+            id: "aceites"
+        },
+        precio: 300
+    },
+    {
+        id: "herramientas-01",
+        titulo: "Gato Hidraulico",
+        imagen: "../img/herramientas/gato hidraulico 01.png",
+        categoria: {
+            nombre: "Herramientas",
+            id: "herramientas"
+        },
+        precio: 1000
+    },
+    {
+        id: "herramientas-02",
+        titulo: "Llave en Cruz",
+        imagen: "../img/herramientas/llave en cruz 02.png",
+        categoria: {
+            nombre: "Herramientas",
+            id: "herramientas"
+        },
+        precio: 1000
+    },
+    {
+        id: "herramientas-03",
+        titulo: "Matraca",
+        imagen: "../img/herramientas/matraca 03.png",
+        categoria: {
+            nombre: "Herramientas",
+            id: "herramientas"
+        },
+        precio: 1000
+    },
+    {
+        id: "herramientas-04",
+        titulo: "Caja Completa",
+        imagen: "../img/herramientas/caja herramientas 04.png",
+        categoria: {
+            nombre: "Herramientas",
+            id: "herramientas"
+        },
+        precio: 1000
+    },
 ]
 
 const contenedorProductos = document.querySelector("#contenedor-productos")
@@ -132,7 +292,7 @@ function cargarProductos(productosElegidos) {
     productosElegidos.forEach(producto => {
 
         const div = document.createElement("div");
-        div.classList.add("products")
+        div.classList.add("productos")
         div.innerHTML = `
             <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
             <div class="producto-detalles">
@@ -161,7 +321,7 @@ botonesCategorias.forEach(boton => {
             const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
             cargarProductos(productosBoton);
         } else {
-            tituloPrincipal.innerText = "Todos los productos";
+            tituloPrincipal.innerText = "todos-los-productos";
             cargarProductos(productos);
         }
     })

@@ -102,7 +102,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 5%;
+  padding: 3%;
 }
 .nav_block button {
   border: 1px solid rgb(220, 220, 220);
@@ -111,13 +111,13 @@ h2 {
   padding: 10px;
 }
 .nav_block button:hover {
-  width: 260px;
+  width: 160px;
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   transition: all 0.7s;
 }
 .nav_block button img {
-  width: 225px;
+  width: 125px;
   height: auto;
 }
 
@@ -171,7 +171,7 @@ h2 {
 }
 
 .producto-imagen {
-  width: 250px;
+  width: 220px;
   height: auto;
   padding-bottom: 10px;
   border-radius: 20px;
@@ -180,7 +180,7 @@ h2 {
 .contenedor-productos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 /* Carrito */

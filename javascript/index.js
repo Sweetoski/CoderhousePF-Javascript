@@ -57,9 +57,10 @@ function capturar(){
   }
 
   /* Lista de Actividades */
-  let button = document.querySelector('#btn-agregar');
-  let input = document.querySelector('#nueva-actividad');
-  let ol = document.querySelector('ol');
+  window.addEventListener('load', function(){
+    let button = document.querySelector('#btn-agregar');
+    let input = document.querySelector('#nueva-actividad');
+    let ol = document.querySelector('ol');
 
   
 
@@ -71,10 +72,11 @@ function capturar(){
   });
 
   input.addEventListener('keypress', function(event) {
-    if(input.value.lenght > 0 && event.keyCode == 13) {
-      let li = document.createElement('li');
-      li.appendChild(document.createTextNode(input.value));
-      ol.appendChild(li);
-      input.value = '';
-    }
+      if(input.value.lenght > 0 && event.keyCode == 13) {
+        let li = document.createElement('li');
+        li.appendChild(document.createTextNode(input.value));
+        ol.appendChild(li);
+        input.value = '';
+      }
+    })
   })

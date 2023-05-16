@@ -49,13 +49,6 @@ header h1 {
   background-color: rgb(0, 0, 0);
   position: relative;
 }
-.navbar .carrito {
-  float: right;
-  text-decoration: none;
-}
-.navbar .carrito i {
-  padding-right: 0.5rem;
-}
 .navbar a {
   color: white;
   padding: 30px;
@@ -89,194 +82,20 @@ img {
   border-radius: 10px;
 }
 
-/* Titulo de accesorios */
-h2 {
-  text-align: center;
-  font: bold;
-  padding-top: 5%;
+/* Informacion final y logos */
+.info_accesorios {
+  padding: 5% 25% 1% 25%;
 }
 
-/* Bloque de navegacion para los accesorios y repuestos */
-.nav_block {
-  box-sizing: border-box;
+.logos_accesorios {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 5%;
-}
-.nav_block button {
-  border: 1px solid rgb(220, 220, 220);
-  transition: all 400ms ease;
-  overflow: hidden;
-  padding: 10px;
-}
-.nav_block button:hover {
-  width: 260px;
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  transition: all 0.7s;
-}
-.nav_block button img {
-  width: 225px;
-  height: auto;
-}
-
-/* Los productos */
-.carrito {
-  float: right;
-  text-decoration: none;
-  margin-right: 2rem;
-}
-.carrito i {
-  padding-right: 0.5rem;
-}
-
-.wrapper {
-  padding-bottom: 5rem;
-}
-.wrapper h3 {
-  margin: 2rem;
-  margin-bottom: 2rem;
-}
-
-.contenedor-productos {
-  background-color: rgb(220, 220, 220);
-  margin: 2rem;
-  border-radius: 2rem;
-  padding: 2rem;
-}
-
-.producto {
-  padding-bottom: 4rem;
-}
-
-.producto-detalles {
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
-  border-radius: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.producto-detalles button {
-  border-radius: 20px;
-  padding: 10px;
-  background-color: #c5db48;
-  border: #c5db48;
-  border: 2px solid #c5db48;
-}
-.producto-detalles button:hover {
-  background-color: black;
-  color: #ffffff;
-}
-
-.producto-imagen {
-  width: 250px;
-  height: auto;
-  padding-bottom: 10px;
-  border-radius: 20px;
-}
-
-.contenedor-productos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-/* Carrito */
-.carrito-vacio,
-.carrito-comprado {
-  color: black;
-  text-align: center;
-}
-
-.contenedor-carrito {
-  background-color: rgb(220, 220, 220);
-  margin: 2rem;
-  border-radius: 2rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.carrito-productos {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.carrito-producto {
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
-  color: #ffffff;
-  padding: 2rem;
-  border-radius: 20px;
   align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
-.carrito-producto button {
-  background-color: transparent;
-  border: 0;
-  color: firebrick;
-  padding: 5px;
-}
-
-.carrito-producto-imagen {
-  width: 8rem;
-}
-
-.carrito-acciones {
-  display: flex;
-  justify-content: space-between;
-}
-
-.carrito-acciones-volver {
-  border-radius: 20px;
-  background-color: #c5db48;
-  border: #c5db48;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-}
-.carrito-acciones-volver i {
-  padding-right: 0.5rem;
-}
-
-.carrito-acciones-vaciar {
-  border-radius: 20px;
-  background-color: #c5db48;
-  border: #c5db48;
-  padding: 10px;
-}
-
-.carrito-acciones-derecha {
-  display: flex;
-}
-
-.carrito-acciones-total {
-  display: flex;
-  border-radius: 20px;
-  background-color: rgb(220, 220, 220);
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-.carrito-acciones-comprar {
-  border-radius: 20px;
-  background-color: #c5db48;
-  border: #c5db48;
-  padding: 10px;
-}
-
-.numerito {
-  border-radius: 10px;
-  background-color: rgb(220, 220, 220);
-  padding: 0.5rem;
-}
-
-.disabled {
-  display: none;
+.logos_accesorios img {
+  width: 120px;
 }
 
 /* Footer */

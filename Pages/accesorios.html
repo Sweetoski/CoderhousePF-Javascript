@@ -9,11 +9,8 @@
     <!-- bootstrap pruebas -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
     <!-- css pruebas -->
     <link rel="stylesheet" href="../css/estilos_accesorios.css">
-
 </head>
 <body>
     <header>
@@ -21,81 +18,53 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html"><img src="../img/Auto Total Logo.png" alt="Logo Auto Total"></a>
-              
+              <button class="navbar-toggler border_burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="span_burger"><i class="fa-solid fa-burger"></i></span>
+              </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto" style="width: 60%;">
                   <a class="nav-link mx-auto" href="../pages/accesorios.html">Accesorios y Repuestos</a>
                   <a class="nav-link mx-auto" href="../pages/contacto.html">Contacto</a>
                 </div>
               </div>
-
-              <a class="boton-carrito carrito active" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span id="numerito" class="numerito">0</span></a>
-              <button class="navbar-toggler border_burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="span_burger"><i class="fa-solid fa-burger"></i></span>
-              </button>
-
             </div>
           </nav>
     </header>
 
-    <!-- Menu de los productos -->
-    <div class="wrapper">
-      <h2>ACCESORIOS Y REPUESTOS</h2>
-      <main class="nav_block">
-        <button id="bujias-filtros" class="boton-categoria">
-          <img src="../img/accesorios01.png" alt="">
-        </button>
+    <!-- Información sobre accesorios -->
+    <section class="info_accesorios">
+        <article>
+            <h4>Accesorios y Repuestos</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, asperiores placeat. Ea at unde corporis fuga, itaque beatae dolorum aperiam libero odit voluptatum, ex quam, officiis doloremque sed aspernatur consequatur.</p>
+        </article>
+    </section>
 
-        <button id="frenos" class="boton-categoria">
-          <img src="../img/accesorios02.png" alt="">
-        </button>
-
-        <button id="interior" class="boton-categoria">
-          <img src="../img/accesorios03.png" alt="">
-        </button>
-
-        <button id="luces" class="boton-categoria">
-          <img src="../img/accesorios04.png" alt="">
-        </button>
-
-        <button id="baterias" class="boton-categoria">
-          <img src="../img/accesorios05.png" alt="">
-        </button>
-
-        <button id="rines" class="boton-categoria">
-          <img src="../img/accesorios06.png" alt="">
-        </button>
-
-        <button id="aceites-coolers" class="boton-categoria">
-          <img src="../img/accesorios07.png" alt="">
-        </button>
-      
-        <button id="herramientas" class="boton-categoria">
-          <img src="../img/accesorios08.png" alt="">
-        </button>
-      </main>
-
-      <!-- Productos -->
-      <section>
-        <!-- link de carrito -->
-        <div>
-          <a class="boton-carrito carrito active" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span id="numerito" class="numerito">0</span></a>
+    <!--  Imagenes de accesorios -->
+    <div class="container text-center logos_nissan">
+        <div class="row logos_accesorios row">
+          <div class="col">
+            <div><img src="../img/accesorio 01.png" alt=""></li></div>
+          </div>
+          <div class="col">
+            <div><img src="../img/accesorio 02.png" alt=""></li></div>
+          </div>
+          <div class="col">
+            <div><img src="../img/accesorio 03.png" alt=""></li></div>
+          </div>
+          <div class="col">
+            <div><img src="../img/accesorio 04.png" alt=""></li></div>
+          </div>
+          <div class="col">
+            <div><img src="../img/accesorio 05.png" alt=""></li></div>
+          </div>
+          <div class="col">
+            <div><img src="../img/accesorio 06.png" alt=""></li></div>
+          </div>
+          <div class="col">
+            <div><img src="../img/accesorio 07.png" alt=""></li></div>
+          </div>
         </div>
-        <h3 id="titulo-principal">Bujías y Filtros</h3>
-        <div id="contenedor-productos" class="contenedor-productos">
-
-          <!-- Aqui estan los productos desde Javascript -->
-
-        </div>
-      </section>
-
-      <!-- otro link del carrito -->
-      <div>
-        <a class="boton-carrito carrito active" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span id="numerito" class="numerito">0</span></a>
       </div>
-
-    </div>
-    
 
     <!-- Footer de Accesorios -->  
     <footer>
@@ -146,7 +115,7 @@
     <script src="https://kit.fontawesome.com/40fc3c674f.js" crossorigin="anonymous"></script>
     
     <!-- Javascript script accesorios -->
-    <script src="../javascript/accesorios.js"></script>
+    <script src=""></script>
 
 </body>
 </html>

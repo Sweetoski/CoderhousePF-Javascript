@@ -14,6 +14,7 @@
 
     <!-- css carrito para accesorios y repuestos -->
     <link rel="stylesheet" href="../css/estilos_accesorios.css">
+
 </head>
 <body>
     <header>
@@ -29,7 +30,6 @@
                 </div>
               </div>
 
-              <a class="nav-link mx-auto carrito active" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span id="numerito" class="numerito">0</span></a>
               <button class="navbar-toggler border_burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="span_burger"><i class="fa-solid fa-burger"></i></span>
               </button>
@@ -40,75 +40,31 @@
 
 
     <!-- Carrito -->
-    <main class="">
+    <main>
         <h2 class="titulo-principal">Carrito</h2>
-        
+        <div>
+            <a class="carrito-acciones-volver boton-volver" href="../pages/accesorios.html"><i class="bi bi-arrow-left-circle-fill"></i>Seguir Comprando</a>
+        </div>
         <div class="contenedor-carrito">
-            <p class="carrito-vacio">Tu carrito esta vacío</p>
-            <div class="carrito-productos disabled">
-
-                <!-- Productos en el carrito -->
-                <div class="carrito-producto">
-                    <img class="carrito-producto-imagen" src="../img/refacciones/bujias 01.png" alt="">
-                    <div class="carrito-producto-titulo">
-                        <small>Titulo</small>
-                        <h4>Bujías 01</h4>
-                    </div>
-                    <div class="carrito-producto-cantidad">
-                        <small>Cantidad</small>
-                        <p>1</p>
-                    </div>
-                    <div class="carrito-producto-precio">
-                        <small>Precio</small>
-                        <p>$600</p>
-                    </div>
-                    <div class="carrito-producto-subtotal">
-                        <small>Subtotal</small>
-                        <p>$600</p>
-                    </div>
-                    <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
-                </div>
-
-                <div class="carrito-producto">
-                    <img class="carrito-producto-imagen" src="../img/refacciones/frenos 01.png" alt="">
-                    <div class="carrito-producto-titulo">
-                        <small>Titulo</small>
-                        <h4>Bujías 02</h4>
-                    </div>
-                    <div class="carrito-producto-cantidad">
-                        <small>Cantidad</small>
-                        <p>2</p>
-                    </div>
-                    <div class="carrito-producto-precio">
-                        <small>Precio</small>
-                        <p>$600</p>
-                    </div>
-                    <div class="carrito-producto-subtotal">
-                        <small>Subtotal</small>
-                        <p>$1200</p>
-                    </div>
-                    <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
-                </div>
-
-            </div>
-
+            <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacío</p>
+            <div id="carrito-productos" class="carrito-productos disabled">
+                <!-- Productos en el carrito con JS -->
+            </div>    
             <!-- botones de accion del carrito -->
-            <div class="carrito-acciones disabled">
-                <div>
-                    <a class="carrito-acciones-volver boton-volver" href="../pages/accesorios.html"><i class="bi bi-arrow-left-circle-fill"></i>Seguir Comprando</a>
-                </div>
+            <div id="carrito-acciones" class="carrito-acciones disabled">
+
                 <div class="carrito-acciones-izquierda">
-                    <button class="carrito-acciones-vaciar">Vaciar Carrito</button>
+                    <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar Carrito</button>
                 </div>
                 <div class="carrito-acciones-derecha">
                     <div class="carrito-acciones-total">
-                        <p>Total</p>
+                        <p>Total=</p>
                         <p id="total">$1800</p>
                     </div>
-                    <button class="carrito-acciones-comprar">Comprar Ahora</button>
+                    <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar Ahora</button>
                 </div>
             </div>
-            <p class="carrito-comprado disabled">Muchas gracias por tu compra</p>
+            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra</p>
         </div>
 
     </main>

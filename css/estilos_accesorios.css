@@ -45,25 +45,23 @@ header h1 {
 }
 
 /* Menu de Navegación */
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+}
+
 .navbar {
   background-color: rgb(0, 0, 0);
   position: relative;
 }
-.navbar .carrito {
-  float: right;
-  text-decoration: none;
-}
-.navbar .carrito i {
-  padding-right: 0.5rem;
-}
 .navbar a {
   color: white;
-  padding: 30px;
+  padding: 20px;
   cursor: pointer;
   justify-content: center;
 }
 .navbar a img {
-  width: 180px;
+  width: 160px;
   height: auto;
 }
 .navbar a:hover {
@@ -94,6 +92,7 @@ h2 {
   text-align: center;
   font: bold;
   padding-top: 5%;
+  padding-bottom: 4rem;
 }
 
 /* Bloque de navegacion para los accesorios y repuestos */
@@ -103,6 +102,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   padding: 3%;
+  padding-bottom: 5rem;
 }
 .nav_block button {
   border: 1px solid rgb(220, 220, 220);
@@ -150,6 +150,11 @@ h2 {
   padding-bottom: 4rem;
 }
 
+.producto-titulo {
+  word-break: break-all;
+  font-size: 100%;
+}
+
 .producto-detalles {
   background-color: rgb(0, 0, 0);
   color: #ffffff;
@@ -171,7 +176,7 @@ h2 {
 }
 
 .producto-imagen {
-  width: 220px;
+  width: 180px;
   height: auto;
   padding-bottom: 10px;
   border-radius: 20px;
@@ -180,7 +185,7 @@ h2 {
 .contenedor-productos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 /* Carrito */

@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seminuevos</title>
 
-    <!-- bootstrap pruebas -->
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!-- bootstrap iconos accesorios -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Libreria Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-    <!-- css pruebas -->
+    <!-- css -->
     <link rel="stylesheet" href="../css/estilos_accesorios.css">
 
 </head>
 <body>
-    <header>
+    <header class="navbar-sticky">
         <h1 class="h1_container">Accesorios y Repuestos</h1>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -29,7 +33,8 @@
                 </div>
               </div>
 
-              <a class="boton-carrito carrito active" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span id="numerito" class="numerito">0</span></a>
+              <a class="boton-carrito carrito active" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i><span id="numerito" class="numerito">0</span></a>
+
               <button class="navbar-toggler border_burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="span_burger"><i class="fa-solid fa-burger"></i></span>
               </button>
@@ -42,45 +47,59 @@
     <div class="wrapper">
       <h2>ACCESORIOS Y REPUESTOS</h2>
       <main class="nav_block">
-        <button id="todos-los-productos" class="boton-categoria">
-          <img src="../img/accesorios01.png" alt="">
-        </button>
 
-        <button id="refacciones" class="boton-categoria">
-          <img src="../img/accesorios02.png" alt="">
-        </button>
+        <a href="#bajar-a-productos">
+          <button id="todos-los-productos" class="boton-categoria">
+            <img src="../img/accesorios01.png" alt="">
+          </button>
+        </a>
 
-        <button id="interior" class="boton-categoria">
-          <img src="../img/accesorios03.png" alt="">
-        </button>
+        <a href="#bajar-a-productos">
+          <button id="refacciones" class="boton-categoria">
+            <img src="../img/accesorios02.png" alt="">
+          </button>
+        </a>
 
-        <button id="luces" class="boton-categoria">
-          <img src="../img/accesorios04.png" alt="">
-        </button>
+        <a href="#bajar-a-productos">
+          <button id="interior" class="boton-categoria">
+            <img src="../img/accesorios03.png" alt="">
+          </button>
+        </a>
 
-        <button id="baterias" class="boton-categoria">
-          <img src="../img/accesorios05.png" alt="">
-        </button>
+        <a href="#bajar-a-productos">
+          <button id="luces" class="boton-categoria">
+            <img src="../img/accesorios04.png" alt="">
+          </button>
+        </a>
 
-        <button id="rines" class="boton-categoria">
-          <img src="../img/accesorios06.png" alt="">
-        </button>
+        <a href="#bajar-a-productos">
+          <button id="baterias" class="boton-categoria">
+            <img src="../img/accesorios05.png" alt="">
+          </button>
+        </a>
 
-        <button id="aceites" class="boton-categoria">
-          <img src="../img/accesorios07.png" alt="">
-        </button>
+        <a href="#bajar-a-productos">
+          <button id="rines" class="boton-categoria">
+            <img src="../img/accesorios06.png" alt="">
+          </button>
+        </a>
+
+        <a href="#bajar-a-productos">
+          <button id="aceites" class="boton-categoria">
+            <img src="../img/accesorios07.png" alt="">
+          </button>
+        </a>
       
-        <button id="herramientas" class="boton-categoria">
-          <img src="../img/accesorios08.png" alt="">
-        </button>
+        <a href="#bajar-a-productos">
+          <button id="herramientas" class="boton-categoria">
+            <img src="../img/accesorios08.png" alt="">
+          </button>
+        </a>
+
       </main>
 
       <!-- Productos -->
-      <section>
-        <!-- link de carrito -->
-        <div>
-          <a class="boton-carrito carrito" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span id="numerito1" class="numerito">0</span></a>
-        </div>
+      <section id="bajar-a-productos">
         <h3 id="titulo-principal">Todos los Productos</h3>
         <div id="contenedor-productos" class="contenedor-productos">
 
@@ -88,9 +107,6 @@
 
         </div>
       </section>
-
-      <!-- otro link del carrito -->
-      <a class="boton-carrito carrito active" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span id="numerito2" class="numerito">0</span></a>
 
     </div>
 
@@ -136,13 +152,16 @@
         </div>
     </footer>
 
-    <!-- Bootstrap script index -->
+    <!-- Toastify accesorios -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Bootstrap accesorios -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
-    <!-- Font Awesome script index -->
+    <!-- Font Awesome accesorios -->
     <script src="https://kit.fontawesome.com/40fc3c674f.js" crossorigin="anonymous"></script>
     
-    <!-- Javascript script accesorios -->
+    <!-- Javascript accesorios -->
     <script src="../javascript/accesorios.js"></script>
 
 </body>

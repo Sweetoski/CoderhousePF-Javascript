@@ -1,285 +1,11 @@
-const productos = [
-    {
-        id: "refacciones-01",
-        titulo: "Bujiías",
-        imagen: "../img/refacciones/bujias 01.png",
-        categoria: {
-            nombre: "Refacciones",
-            id: "refacciones"
-        },
-        precio: 600
-    },
-    {
-        id: "refacciones-02",
-        titulo: "Frenos",
-        imagen: "../img/refacciones/frenos 02.png",
-        categoria: {
-            nombre: "Refacciones",
-            id: "refacciones"
-        },
-        precio: 600
-    },
-    {
-        id: "refacciones-03",
-        titulo: "Filtro",
-        imagen: "../img/refacciones/filtro 03.png",
-        categoria: {
-            nombre: "Refacciones",
-            id: "refacciones"
-        },
-        precio: 600
-    },
-    {
-        id: "refacciones-04",
-        titulo: "Pastillas",
-        imagen: "../img/refacciones/pastillas 04.png",
-        categoria: {
-            nombre: "Refacciones",
-            id: "refacciones"
-        },
-        precio: 600
-    },
-    {
-        id: "interior-01",
-        titulo: "Asiento",
-        imagen: "../img/interior/asiento 01.png",
-        categoria: {
-            nombre: "Interior",
-            id: "interior"
-        },
-        precio: 250
-    },
-    {
-        id: "interior-02",
-        titulo: "Volante",
-        imagen: "../img/interior/volante 02.png",
-        categoria: {
-            nombre: "Interior",
-            id: "interior"
-        },
-        precio: 250
-    },
-    {
-        id: "interior-03",
-        titulo: "Tapete",
-        imagen: "../img/interior/tapete 03.png",
-        categoria: {
-            nombre: "Interior",
-            id: "interior"
-        },
-        precio: 250
-    },
-    {
-        id: "interior-04",
-        titulo: "Estereo",
-        imagen: "../img/interior/estereo 04.png",
-        categoria: {
-            nombre: "Interior",
-            id: "interior"
-        },
-        precio: 250
-    },
-    {
-        id: "luces-01",
-        titulo: "Faros",
-        imagen: "../img/luces/faros 01.png",
-        categoria: {
-            nombre: "Luces",
-            id: "luces"
-        },
-        precio: 1250
-    },
-    {
-        id: "luces-02",
-        titulo: "Calavera",
-        imagen: "../img/luces/calavera 02.png",
-        categoria: {
-            nombre: "Luces",
-            id: "luces"
-        },
-        precio: 1250
-    },
-    {
-        id: "luces-03",
-        titulo: "Stop",
-        imagen: "../img/luces/stop 03.png",
-        categoria: {
-            nombre: "Luces",
-            id: "luces"
-        },
-        precio: 1250
-    },
-    {
-        id: "luces-04",
-        titulo: "Bombilla",
-        imagen: "../img/luces/bombilla 04.png",
-        categoria: {
-            nombre: "Luces",
-            id: "luces"
-        },
-        precio: 1250
-    },
-    {
-        id: "baterias-01",
-        titulo: "Batería 01",
-        imagen: "../img/baterias/bateria 01.png",
-        categoria: {
-            nombre: "Baterias",
-            id: "baterias"
-        },
-        precio: 700
-    },
-    {
-        id: "baterias-02",
-        titulo: "Batería 02",
-        imagen: "../img/baterias/bateria 02.png",
-        categoria: {
-            nombre: "Baterias",
-            id: "baterias"
-        },
-        precio: 700
-    },
-    {
-        id: "baterias-03",
-        titulo: "Batería 03",
-        imagen: "../img/baterias/bateria 03.png",
-        categoria: {
-            nombre: "Baterias",
-            id: "baterias"
-        },
-        precio: 700
-    },
-    {
-        id: "baterias-04",
-        titulo: "Batería 04",
-        imagen: "../img/baterias/bateria 04.png",
-        categoria: {
-            nombre: "Baterias",
-            id: "baterias"
-        },
-        precio: 700
-    },
-    {
-        id: "rines-01",
-        titulo: "Rin 01",
-        imagen: "../img/rines/rin 01.png",
-        categoria: {
-            nombre: "Rines",
-            id: "rines"
-        },
-        precio: 2000
-    },
-    {
-        id: "rines-02",
-        titulo: "Rin 02",
-        imagen: "../img/rines/rin 02.png",
-        categoria: {
-            nombre: "Rines",
-            id: "rines"
-        },
-        precio: 2000
-    },
-    {
-        id: "rines-03",
-        titulo: "Rin 03",
-        imagen: "../img/rines/rin 03.png",
-        categoria: {
-            nombre: "Rines",
-            id: "rines"
-        },
-        precio: 2000
-    },
-    {
-        id: "rines-04",
-        titulo: "Rin 04",
-        imagen: "../img/rines/rin 04.png",
-        categoria: {
-            nombre: "Rines",
-            id: "rines"
-        },
-        precio: 2000
-    },
-    {
-        id: "aceites-01",
-        titulo: "Anticongelante 01",
-        imagen: "../img/aceites/anticongelante 01.png",
-        categoria: {
-            nombre: "Aceites y Anticongelantes",
-            id: "aceites"
-        },
-        precio: 300
-    },
-    {
-        id: "aceites-02",
-        titulo: "Aceite 01",
-        imagen: "../img/aceites/aceite 02.png",
-        categoria: {
-            nombre: "Aceites y Anticongelantes",
-            id: "aceites"
-        },
-        precio: 300
-    },
-    {
-        id: "aceites-03",
-        titulo: "Anticongelante 02",
-        imagen: "../img/aceites/anticongelante 03.png",
-        categoria: {
-            nombre: "Aceites y Anticongelantes",
-            id: "aceites"
-        },
-        precio: 300
-    },
-    {
-        id: "aceites-04",
-        titulo: "Aceite 02",
-        imagen: "../img/aceites/aceite 04.png",
-        categoria: {
-            nombre: "Aceites y Anticongelantes",
-            id: "aceites"
-        },
-        precio: 300
-    },
-    {
-        id: "herramientas-01",
-        titulo: "Gato Hidraulico",
-        imagen: "../img/herramientas/gato hidraulico 01.png",
-        categoria: {
-            nombre: "Herramientas",
-            id: "herramientas"
-        },
-        precio: 1000
-    },
-    {
-        id: "herramientas-02",
-        titulo: "Llave en Cruz",
-        imagen: "../img/herramientas/llave en cruz 02.png",
-        categoria: {
-            nombre: "Herramientas",
-            id: "herramientas"
-        },
-        precio: 1000
-    },
-    {
-        id: "herramientas-03",
-        titulo: "Matraca",
-        imagen: "../img/herramientas/matraca 03.png",
-        categoria: {
-            nombre: "Herramientas",
-            id: "herramientas"
-        },
-        precio: 1000
-    },
-    {
-        id: "herramientas-04",
-        titulo: "Caja Herramientas",
-        imagen: "../img/herramientas/caja herramientas 04.png",
-        categoria: {
-            nombre: "Herramientas",
-            id: "herramientas"
-        },
-        precio: 1000
-    },
-]
+let productos = [];
+
+fetch("../javascript/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+})
 
 const contenedorProductos = document.querySelector("#contenedor-productos")
 const botonesCategorias = document.querySelectorAll(".boton-categoria")
@@ -344,13 +70,30 @@ let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 if (productosEnCarritoLS) {
     productosEnCarrito = JSON.parse(productosEnCarritoLS);
     actualizarNumerito();
-    actualizarNumerito1();
-    actualizarNumerito2();
 } else {
     productosEnCarrito = [];
 }
 
 function agregarAlCarrito(e) {
+    Toastify({
+        text: "Producto Agregado",
+        color: "white",
+        duration: 3000,
+        close: false,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #1b1b1b, #555963)",
+          borderRadius: "2rem",
+        },
+        offset: {
+            x: "1rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: "7rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     const idBoton = e.currentTarget.id;
     /* console.log(id) */
     const productoAgregado = productos.find(producto => producto.id === idBoton);
@@ -370,8 +113,6 @@ function agregarAlCarrito(e) {
     /* console.log(productosEnCarrito); */
 
     actualizarNumerito();
-    actualizarNumerito1();
-    actualizarNumerito2();
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
@@ -379,14 +120,4 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     /* console.log(numerito); */
     numerito.innerHTML = nuevoNumerito;
-}
-function actualizarNumerito1() {
-    let nuevoNumerito1 = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-    /* console.log(numerito); */
-    numerito1.innerHTML = nuevoNumerito1;
-}
-function actualizarNumerito2() {
-    let nuevoNumerito2 = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-    /* console.log(numerito); */
-    numerito2.innerHTML = nuevoNumerito2;
 }

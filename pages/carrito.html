@@ -12,12 +12,15 @@
     <!-- bootstrap iconos carrito -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    <!-- Libreria Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <!-- css carrito para accesorios y repuestos -->
     <link rel="stylesheet" href="../css/estilos_accesorios.css">
 
 </head>
 <body>
-    <header>
+    <header class="navbar-sticky">
         <h1 class="h1_container">Carrito para Accesorios y Repuestos</h1>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -30,6 +33,8 @@
                 </div>
               </div>
 
+              <a class="boton-carrito carrito active" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i><span id="numerito" class="numerito"></span></a>
+              
               <button class="navbar-toggler border_burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="span_burger"><i class="fa-solid fa-burger"></i></span>
               </button>
@@ -41,7 +46,7 @@
 
     <!-- Carrito -->
     <main>
-        <h2 class="titulo-principal">Carrito</h2>
+        <h2 class="titulo-principal">CARRITO DE COMPRAS</h2>
         <div>
             <a class="carrito-acciones-volver boton-volver" href="../pages/accesorios.html"><i class="bi bi-arrow-left-circle-fill"></i>Seguir Comprando</a>
         </div>
@@ -65,6 +70,7 @@
                 </div>
             </div>
             <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra</p>
+            
         </div>
 
     </main>
@@ -111,13 +117,19 @@
         </div>
     </footer>
 
-    <!-- Bootstrap script index -->
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
-    <!-- Font Awesome script index -->
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/40fc3c674f.js" crossorigin="anonymous"></script>
     
-    <!-- Javascript script accesorios -->
+    <!-- Javascript -->
     <script src="../javascript/carrito.js"></script>
 
 </body>

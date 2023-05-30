@@ -75,6 +75,13 @@ header h1 {
 .navbar .border_burger:hover {
   background-color: rgb(50, 50, 50);
 }
+.navbar .carrito {
+  text-decoration: none;
+  margin-right: 2rem;
+}
+.navbar .carrito i {
+  padding-right: 0.5rem;
+}
 
 /* Todas las Imagenes */
 img {

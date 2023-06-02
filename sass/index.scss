@@ -74,6 +74,9 @@ header {
             text-decoration: overline;
         }
     }
+    .logo-usuario {
+        color: #ffffff;
+    }
     .span_burger {
         color: white;
         cursor: pointer;
@@ -218,30 +221,26 @@ main h2 {
 }
 
 /* Forma Usuarios */
-.boton_agregar {
-    background-color: #c5db48;
-}
-.div_nombreEdad {
-    background-color: #ffffff;
-    thead {
-        border: #000000;
-    }
-}
-
-/* Lista de Actividades */
-.lista_container {
-    background-color: #8d8d8d;
-    padding: 5%;
-    input {
-        border-radius: 10px;
-        background-color: #000000;
-        color: #ffffff;
-    }
-    button {
+.login-form {
+    .boton_entrar {
         background-color: #c5db48;
-        border-radius: 10px;
-        border: #c5db48;
-        padding: 10px;
+        border: 1px solid #c5db48;
+        border-radius: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .div_nombreEdad {
+        background-color: #ffffff;
+        thead {
+            border: #000000;
+        }
+    }
+    div {
+        padding-top: 1rem;
+        #registrarse-aqui {
+            color: blue;
+            text-decoration: none;
+        }
     }
 }
 

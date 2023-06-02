@@ -1,3 +1,16 @@
+/* Inicio de sesion */
+function loguear() {
+  var user = document.getElementById("user").value;
+
+  var pass = document.getElementById("pass").value;
+
+  if(user=="oscar" && pass=="Prueba1234") {
+    window.location="./pages/accesorios.html";
+  } else {
+    alert("Datos Incorrectos")
+  }
+}
+
 /* Simulador de Precios */
 function gen_table(){
   document.getElementById("tab").innerHTML="";
@@ -32,51 +45,3 @@ function gen_table(){
       alert("Falta ingresar un Número");
   }
 }
-
-/* Forma para Usuarios */
-function capturar(){
-    
-    function Persona(nombre,edad){
-      this.nombre=nombre;
-      this.edad=edad;
-    }
-    var nombreCapturar = document.getElementById("nombre").value;
-    
-    var edadCapturar = document.getElementById("edad").value;
-    
-    nuevoSujeto = new Persona(nombreCapturar,edadCapturar);
-    
-    agregar();
-  }
-
-  var baseDatos= [];
-  function agregar(){
-    baseDatos.push(nuevoSujeto);
-    
-    document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.edad+'</td></tbody>';
-  }
-
-  /* Lista de Actividades */
-  window.addEventListener('load', function(){
-    let button = document.querySelector('#btn-agregar');
-    let input = document.querySelector('#nueva-actividad');
-    let ol = document.querySelector('ol');
-
-  
-
-  button.addEventListener('click', function(){
-      let li = document.createElement('li');
-      li.appendChild(document.createTextNode(input.value));
-      ol.appendChild(li);
-      input.value = '';
-  });
-
-  input.addEventListener('keypress', function(event) {
-      if(input.value.lenght > 0 && event.keyCode == 13) {
-        let li = document.createElement('li');
-        li.appendChild(document.createTextNode(input.value));
-        ol.appendChild(li);
-        input.value = '';
-      }
-    })
-  })

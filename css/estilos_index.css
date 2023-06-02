@@ -64,6 +64,9 @@ header h1 {
   color: firebrick;
   text-decoration: overline;
 }
+.navbar .logo-usuario {
+  color: #ffffff;
+}
 .navbar .span_burger {
   color: white;
   cursor: pointer;
@@ -210,32 +213,25 @@ main h2 {
 }
 
 /* Forma Usuarios */
-.boton_agregar {
+.login-form .boton_entrar {
   background-color: #c5db48;
+  border: 1px solid #c5db48;
+  border-radius: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
-
-.div_nombreEdad {
+.login-form .div_nombreEdad {
   background-color: #ffffff;
 }
-.div_nombreEdad thead {
+.login-form .div_nombreEdad thead {
   border: #000000;
 }
-
-/* Lista de Actividades */
-.lista_container {
-  background-color: #8d8d8d;
-  padding: 5%;
+.login-form div {
+  padding-top: 1rem;
 }
-.lista_container input {
-  border-radius: 10px;
-  background-color: #000000;
-  color: #ffffff;
-}
-.lista_container button {
-  background-color: #c5db48;
-  border-radius: 10px;
-  border: #c5db48;
-  padding: 10px;
+.login-form div #registrarse-aqui {
+  color: blue;
+  text-decoration: none;
 }
 
 /* Footer */

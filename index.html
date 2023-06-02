@@ -26,13 +26,41 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="./index.html"><img src="./img/Auto Total Logo.png" alt=""></a>
-                  
+
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav mx-auto" style="width: 60%;">
                       <a class="nav-link mx-auto" href="./pages/accesorios.html">Accesorios y Repuestos</a>
                       <a class="nav-link mx-auto" href="./pages/contacto.html">Contacto</a>
                     </div>
                   </div>
+
+                  <!--  -->
+                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    <i class="fa-sharp fa-solid fa-user logo-usuario"></i>
+                  </button>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                      <div class="card card-body" style="width: 300px;">
+                        
+                        <!-- Inicio de sesion usuarios -->
+                        <div class="login-form container py-2">
+                          <p class="lead">Iniciar Sesión</p>
+                          <form>
+                            <input id="user" class="form-control my-2" type="text" placeholder="Correo Electronico">
+                            <input id="pass" class="form-control my-2" type="password" placeholder="Contraseña">
+                            <button id="boton" class="btn btn-sucess boton_entrar" type="button" value="Entrar" onclick="loguear();">Entrar</button>
+                            <div>
+                              <a id="registrarse-aqui" href="./pages/contacto.html">
+                                <p>¿Nuevo Usuario?, Registrarse Aqui</p>
+                              </a>
+                            </div>
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
 
                   <a class="boton-carrito carrito active" href="../pages/carrito.html"><i class="bi bi-cart-fill"></i><span id="numerito" class="numerito"></span></a>
                   
@@ -281,37 +309,6 @@
           </tfoot>
       </table>
   </div>
-
-    <!-- Forma para Usuarios -->
-    <div class="container py-2">
-      <p class="lead">Ingrese Usuario</p>
-      <form>
-        <input id="nombre" class="form-control my-2" type="text" placeholder="Ingresa nombre">
-        <input id="edad" class="form-control my-2" type="text" placeholder="Ingresa edad">
-        <button id="boton" class="btn btn-sucess boton_agregar" type="reset" onclick="capturar ();">Agregar</button>
-      </form>
-    </div>
-    <div class="container div_nombreEdad">
-      <table class="table" id="tabla">
-        <thead class="thead-inverse">
-          <tr>
-            <th>Nombre</th>
-            <th>Edad</th>
-          </tr>
-        </thead>
-      </table>
-    </div>
-
-    <!-- Lista de Actividades -->
-    <div class="lista_container">
-      <h3>Actividades de Hoy</h3>
-        <p id="text">¿Qué vamos a hacer hoy?</p>
-        <input type="text" id="nueva-actividad" placeholder="Agregar actividad">
-        <button id="btn-agregar">Ingresar</button>
-        <ol>
-            <li>Iniciar Lista</li>
-        </ol>
-    </div>
 
     <!-- Footer del Index -->  
     <footer>
